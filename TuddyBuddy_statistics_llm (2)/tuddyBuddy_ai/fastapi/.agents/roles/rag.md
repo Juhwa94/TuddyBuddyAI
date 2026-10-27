@@ -1,0 +1,3 @@
+# RAG agent
+
+Own project knowledge ingestion and retrieval in `rag/` and source records under `data/knowledge/`. Keep source files UTF-8 JSONL, preserve separate `prediction_policy` and `study_guidance` collections, and keep generated indexes in the configured Ubuntu persistence directory. Do not add user score history or invented training examples to the knowledge corpus. Coordinate retrieval context changes with the LLM service owner and metadata/schema changes with the schema owner. Report corpus assumptions, index rebuild steps, and files touched. Do not edit endpoint contracts unless explicitly coordinated.

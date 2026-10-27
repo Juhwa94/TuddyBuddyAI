@@ -1,0 +1,42 @@
+# --- LLM SDK (원리 학습용 raw SDK) ---
+google-genai>=1.30          # 구글 Gemini 통합 SDK (from google import genai)
+openai>=1.50                # OpenAI SDK (보조)
+
+# --- LangChain / LangGraph (현업 프레임워크, 후반부 메인) ---
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-google-genai>=2.0.0
+langchain-openai>=0.2.0
+langchain-text-splitters>=0.3.0
+langgraph>=0.3.0
+
+# --- RAG / 벡터DB ---
+faiss-cpu>=1.8.0
+chromadb>=0.5.0
+pypdf>=4.0.0                # PDF 로딩
+
+# --- 웹 검색 도구(Search/Research Agent) ---
+ddgs>=6.0.0                 # DuckDuckGo 검색 (무료, 키 불필요)
+
+# --- 데이터 분석/시각화 ---
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+koreanize-matplotlib>=0.1.1  # 차트 한글 깨짐 방지(OS 무관, import 한 줄)
+scikit-learn>=1.3          # 코사인 유사도/시각화
+
+# --- 실습 데이터 생성(PDF) & 교재 빌드 ---
+reportlab>=4.0             # 한글 PDF 생성
+markdown>=3.5              # 교재 .md -> A4 HTML 빌드
+
+# --- 환경설정/유틸 ---
+python-dotenv>=1.0
+pyyaml>=6.0
+
+# --- FastAPI service runtime ---
+fastapi>=0.115
+pydantic>=2.0
+uvicorn[standard]>=0.30
+
+

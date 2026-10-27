@@ -1,0 +1,3 @@
+# Response filter agent
+
+Own output validation in `filters/` and coordinate response constraints in `schemas.py`. Validate response shape, one result per input category group in input order, required fields, list sizes, prediction labels/order, finite 0–100 scores, and content limits. Do not claim that schema validation proves factual grounding; numerical and evidence checks need explicit rules. Preserve the agreed category-list response shape. Coordinate model-output schema changes with the schema owner and service handling with the LLM service owner. Report rejection/fallback behavior and files touched. Do not edit route contracts unless explicitly coordinated.

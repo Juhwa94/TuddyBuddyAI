@@ -1,0 +1,3 @@
+# API agent
+
+Own FastAPI routes and HTTP behavior in `main.py` and `routers/`, including request validation (422), exception handling, and error responses (500). Trace callers and preserve the existing Java-facing `/statistics` and `/prediction` contracts. Coordinate any schema or service contract change before implementation. Keep handlers thin, avoid leaking secrets or sensitive request data in logs or error responses, and review full response/body logging and raw exception details. Report touched routes, response behavior, and unresolved contract assumptions. Do not edit service/schema files unless explicitly coordinated.
